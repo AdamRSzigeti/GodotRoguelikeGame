@@ -1,0 +1,46 @@
+[gd_scene load_steps=7 format=3 uid="uid://ctpmnyjs6qwg3"]
+
+[ext_resource type="Script" path="res://Scripts/mobile_controls.gd" id="1_ck06g"]
+[ext_resource type="Texture2D" uid="uid://cbn0j48rhrutb" path="res://Sprites/arrowup.png" id="1_hkwx6"]
+[ext_resource type="Texture2D" uid="uid://bhx0e5hhlhelp" path="res://Sprites/arrowdown.png" id="2_fkujg"]
+[ext_resource type="Texture2D" uid="uid://c0qtsx6radfid" path="res://Sprites/arrowleft.png" id="3_xypac"]
+[ext_resource type="Texture2D" uid="uid://5owh1w8j5lqf" path="res://Sprites/arrowright.png" id="4_e1kfh"]
+[ext_resource type="Texture2D" uid="uid://se6xsw75r66f" path="res://Sprites/UI_Metal_Checkmark_Large_01a.png" id="6_46h15"]
+
+[node name="MobileControls" type="CanvasLayer"]
+script = ExtResource("1_ck06g")
+
+[node name="Up" type="TouchScreenButton" parent="."]
+position = Vector2(512, 160)
+scale = Vector2(2, 2)
+texture_normal = ExtResource("1_hkwx6")
+action = "ui_up"
+visibility_mode = 1
+
+[node name="Down" type="TouchScreenButton" parent="."]
+position = Vector2(512, 288)
+scale = Vector2(2, 2)
+texture_normal = ExtResource("2_fkujg")
+action = "ui_down"
+visibility_mode = 1
+
+[node name="Left" type="TouchScreenButton" parent="."]
+position = Vector2(448, 224)
+scale = Vector2(2, 2)
+texture_normal = ExtResource("3_xypac")
+action = "ui_left"
+visibility_mode = 1
+
+[node name="Right" type="TouchScreenButton" parent="."]
+position = Vector2(576, 224)
+scale = Vector2(2, 2)
+texture_normal = ExtResource("4_e1kfh")
+action = "ui_right"
+visibility_mode = 1
+
+[node name="Interact" type="TouchScreenButton" parent="."]
+position = Vector2(512, 224)
+scale = Vector2(2, 2)
+texture_normal = ExtResource("6_46h15")
+action = "Interact"
+visibility_mode = 1

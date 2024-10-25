@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3 uid="uid://comav02lqxrao"]
+
+[ext_resource type="PackedScene" uid="uid://b4pww6rxkftef" path="res://Prefabs/Units/player.tscn" id="1_avaxf"]
+[ext_resource type="Script" path="res://Scripts/game_manager.gd" id="2_0mr37"]
+[ext_resource type="TileSet" uid="uid://csbdl4mqhbnl" path="res://Resources/tileset.tres" id="3_p8mgi"]
+
+[node name="Main" type="Node2D"]
+script = ExtResource("2_0mr37")
+
+[node name="Player" parent="." instance=ExtResource("1_avaxf")]
+z_index = 2
+position = Vector2(175, 128)
+
+[node name="TileMapLayer" type="TileMapLayer" parent="."]
+position = Vector2(192, 32)
+tile_set = ExtResource("3_p8mgi")

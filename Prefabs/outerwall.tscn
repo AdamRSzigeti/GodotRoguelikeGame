@@ -1,0 +1,56 @@
+[gd_scene load_steps=8 format=3 uid="uid://dr2ollveil2kr"]
+
+[ext_resource type="Texture2D" uid="uid://ngewymaincul" path="res://Sprites/Scavengers_SpriteSheet.png" id="1_c3jgp"]
+[ext_resource type="Script" path="res://Scripts/outerwall.gd" id="1_pd36t"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jmwck"]
+size = Vector2(32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_stm0v"]
+atlas = ExtResource("1_c3jgp")
+region = Rect2(32, 96, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_31yj3"]
+atlas = ExtResource("1_c3jgp")
+region = Rect2(128, 96, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ea2wm"]
+atlas = ExtResource("1_c3jgp")
+region = Rect2(160, 96, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_x0ojv"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_stm0v")
+}],
+"loop": true,
+"name": &"1",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_31yj3")
+}],
+"loop": true,
+"name": &"2",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ea2wm")
+}],
+"loop": true,
+"name": &"3",
+"speed": 5.0
+}]
+
+[node name="Outerwall" type="StaticBody2D"]
+script = ExtResource("1_pd36t")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_jmwck")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_x0ojv")
+animation = &"2"

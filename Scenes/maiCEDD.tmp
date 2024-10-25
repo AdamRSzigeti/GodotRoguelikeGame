@@ -1,0 +1,498 @@
+[gd_scene load_steps=10 format=3 uid="uid://comav02lqxrao"]
+
+[ext_resource type="Script" path="res://Scripts/game_manager.gd" id="2_0mr37"]
+[ext_resource type="TileSet" uid="uid://csbdl4mqhbnl" path="res://Resources/tileset.tres" id="3_p8mgi"]
+[ext_resource type="PackedScene" uid="uid://dr2ollveil2kr" path="res://Prefabs/outerwall.tscn" id="4_68ykj"]
+[ext_resource type="Script" path="res://Scripts/positions.gd" id="5_s20vx"]
+[ext_resource type="Script" path="res://Scripts/gui.gd" id="6_c5hg5"]
+[ext_resource type="PackedScene" uid="uid://ci7wkfvcxp7x" path="res://Prefabs/Exit.tscn" id="6_rtpto"]
+
+[sub_resource type="NavigationPolygon" id="NavigationPolygon_8p7mk"]
+vertices = PackedVector2Array(565.313, -22.7422, 534.742, 405.313, 106.68, 374.742, 137.25, -53.3125)
+polygons = Array[PackedInt32Array]([PackedInt32Array(0, 1, 2, 3)])
+outlines = Array[PackedVector2Array]([PackedVector2Array(128, -64, 576, -32, 544, 416, 96, 384)])
+
+[sub_resource type="LabelSettings" id="LabelSettings_cvbf1"]
+font_size = 20
+
+[sub_resource type="LabelSettings" id="LabelSettings_bt0at"]
+font_size = 75
+
+[node name="Main" type="Node2D"]
+script = ExtResource("2_0mr37")
+
+[node name="TileMapLayer" type="TileMapLayer" parent="."]
+position = Vector2(192, 32)
+tile_set = ExtResource("3_p8mgi")
+
+[node name="Outerwalls" type="Node2D" parent="."]
+
+[node name="Outerwall" parent="Outerwalls" instance=ExtResource("4_68ykj")]
+position = Vector2(176, 16)
+
+[node name="Outerwall9" parent="Outerwalls" instance=ExtResource("4_68ykj")]
+position = Vector2(176, 48)
+
+[node name="Outerwall10" parent="Outerwalls" instance=ExtResource("4_68ykj")]
+position = Vector2(176, 80)
+
+[node name="Outerwall11" parent="Outerwalls" instance=ExtResource("4_68ykj")]
+position = Vector2(176, 112)
+
+[node name="Outerwall12" parent="Outerwalls" instance=ExtResource("4_68ykj")]
+position = Vector2(176, 144)
+
+[node name="Outerwall13" parent="Outerwalls" instance=ExtResource("4_68ykj")]
+position = Vector2(176, 176)
+
+[node name="Outerwall23" parent="Outerwalls" instance=ExtResource("4_68ykj")]
+position = Vector2(496, 48)
+
+[node name="Outerwall24" parent="Outerwalls" instance=ExtResource("4_68ykj")]
+position = Vector2(496, 80)
+
+[node name="Outerwall25" parent="Outerwalls" instance=ExtResource("4_68ykj")]
+position = Vector2(496, 112)
+
+[node name="Outerwall26" parent="Outerwalls" instance=ExtResource("4_68ykj")]
+position = Vector2(496, 144)
+
+[node name="Outerwall27" parent="Outerwalls" instance=ExtResource("4_68ykj")]
+position = Vector2(496, 176)
+
+[node name="Outerwall35" parent="Outerwalls" instance=ExtResource("4_68ykj")]
+position = Vector2(432, 16)
+
+[node name="Outerwall36" parent="Outerwalls" instance=ExtResource("4_68ykj")]
+position = Vector2(176, 272)
+
+[node name="Outerwall28" parent="Outerwalls" instance=ExtResource("4_68ykj")]
+position = Vector2(496, 208)
+
+[node name="Outerwall14" parent="Outerwalls" instance=ExtResource("4_68ykj")]
+position = Vector2(176, 208)
+
+[node name="Outerwall15" parent="Outerwalls" instance=ExtResource("4_68ykj")]
+position = Vector2(176, 336)
+
+[node name="Outerwall2" parent="Outerwalls" instance=ExtResource("4_68ykj")]
+position = Vector2(208, 16)
+
+[node name="Outerwall3" parent="Outerwalls" instance=ExtResource("4_68ykj")]
+position = Vector2(240, 16)
+
+[node name="Outerwall4" parent="Outerwalls" instance=ExtResource("4_68ykj")]
+position = Vector2(272, 16)
+
+[node name="Outerwall5" parent="Outerwalls" instance=ExtResource("4_68ykj")]
+position = Vector2(304, 16)
+
+[node name="Outerwall6" parent="Outerwalls" instance=ExtResource("4_68ykj")]
+position = Vector2(336, 16)
+
+[node name="Outerwall7" parent="Outerwalls" instance=ExtResource("4_68ykj")]
+position = Vector2(368, 16)
+
+[node name="Outerwall29" parent="Outerwalls" instance=ExtResource("4_68ykj")]
+position = Vector2(400, 16)
+
+[node name="Outerwall30" parent="Outerwalls" instance=ExtResource("4_68ykj")]
+position = Vector2(176, 240)
+
+[node name="Outerwall31" parent="Outerwalls" instance=ExtResource("4_68ykj")]
+position = Vector2(400, 336)
+
+[node name="Outerwall32" parent="Outerwalls" instance=ExtResource("4_68ykj")]
+position = Vector2(432, 336)
+
+[node name="Outerwall8" parent="Outerwalls" instance=ExtResource("4_68ykj")]
+position = Vector2(496, 16)
+
+[node name="Outerwall16" parent="Outerwalls" instance=ExtResource("4_68ykj")]
+position = Vector2(208, 336)
+
+[node name="Outerwall17" parent="Outerwalls" instance=ExtResource("4_68ykj")]
+position = Vector2(240, 336)
+
+[node name="Outerwall18" parent="Outerwalls" instance=ExtResource("4_68ykj")]
+position = Vector2(272, 336)
+
+[node name="Outerwall19" parent="Outerwalls" instance=ExtResource("4_68ykj")]
+position = Vector2(304, 336)
+
+[node name="Outerwall20" parent="Outerwalls" instance=ExtResource("4_68ykj")]
+position = Vector2(336, 336)
+
+[node name="Outerwall21" parent="Outerwalls" instance=ExtResource("4_68ykj")]
+position = Vector2(368, 336)
+
+[node name="Outerwall22" parent="Outerwalls" instance=ExtResource("4_68ykj")]
+position = Vector2(496, 240)
+
+[node name="Outerwall33" parent="Outerwalls" instance=ExtResource("4_68ykj")]
+position = Vector2(496, 272)
+
+[node name="Outerwall37" parent="Outerwalls" instance=ExtResource("4_68ykj")]
+position = Vector2(496, 336)
+
+[node name="Outerwall38" parent="Outerwalls" instance=ExtResource("4_68ykj")]
+position = Vector2(496, 304)
+
+[node name="Outerwall39" parent="Outerwalls" instance=ExtResource("4_68ykj")]
+position = Vector2(176, 304)
+
+[node name="Outerwall40" parent="Outerwalls" instance=ExtResource("4_68ykj")]
+position = Vector2(464, 16)
+
+[node name="Outerwall34" parent="Outerwalls" instance=ExtResource("4_68ykj")]
+position = Vector2(464, 336)
+
+[node name="Positions" type="Node2D" parent="."]
+script = ExtResource("5_s20vx")
+
+[node name="1,2" type="Node2D" parent="Positions"]
+position = Vector2(224, 32)
+
+[node name="1,3" type="Node2D" parent="Positions"]
+position = Vector2(256, 32)
+
+[node name="1,4" type="Node2D" parent="Positions"]
+position = Vector2(288, 32)
+
+[node name="1,5" type="Node2D" parent="Positions"]
+position = Vector2(320, 32)
+
+[node name="1,6" type="Node2D" parent="Positions"]
+position = Vector2(352, 32)
+
+[node name="1,7" type="Node2D" parent="Positions"]
+position = Vector2(384, 32)
+
+[node name="1,8" type="Node2D" parent="Positions"]
+position = Vector2(416, 32)
+
+[node name="2,1" type="Node2D" parent="Positions"]
+position = Vector2(192, 64)
+
+[node name="2,2" type="Node2D" parent="Positions"]
+position = Vector2(224, 64)
+
+[node name="2,3" type="Node2D" parent="Positions"]
+position = Vector2(256, 64)
+
+[node name="2,4" type="Node2D" parent="Positions"]
+position = Vector2(288, 64)
+
+[node name="2,5" type="Node2D" parent="Positions"]
+position = Vector2(320, 64)
+
+[node name="2,6" type="Node2D" parent="Positions"]
+position = Vector2(352, 64)
+
+[node name="2,7" type="Node2D" parent="Positions"]
+position = Vector2(384, 64)
+
+[node name="2,8" type="Node2D" parent="Positions"]
+position = Vector2(416, 64)
+
+[node name="2,9" type="Node2D" parent="Positions"]
+position = Vector2(448, 64)
+
+[node name="3,1" type="Node2D" parent="Positions"]
+position = Vector2(192, 96)
+
+[node name="3,2" type="Node2D" parent="Positions"]
+position = Vector2(224, 96)
+
+[node name="3,3" type="Node2D" parent="Positions"]
+position = Vector2(256, 96)
+
+[node name="3,4" type="Node2D" parent="Positions"]
+position = Vector2(288, 96)
+
+[node name="3,5" type="Node2D" parent="Positions"]
+position = Vector2(320, 96)
+
+[node name="3,6" type="Node2D" parent="Positions"]
+position = Vector2(352, 96)
+
+[node name="3,7" type="Node2D" parent="Positions"]
+position = Vector2(384, 96)
+
+[node name="3,8" type="Node2D" parent="Positions"]
+position = Vector2(416, 96)
+
+[node name="3,9" type="Node2D" parent="Positions"]
+position = Vector2(448, 96)
+
+[node name="4,1" type="Node2D" parent="Positions"]
+position = Vector2(192, 128)
+
+[node name="4,2" type="Node2D" parent="Positions"]
+position = Vector2(224, 128)
+
+[node name="4,3" type="Node2D" parent="Positions"]
+position = Vector2(256, 128)
+
+[node name="4,4" type="Node2D" parent="Positions"]
+position = Vector2(288, 128)
+
+[node name="4,5" type="Node2D" parent="Positions"]
+position = Vector2(320, 128)
+
+[node name="4,6" type="Node2D" parent="Positions"]
+position = Vector2(352, 128)
+
+[node name="4,7" type="Node2D" parent="Positions"]
+position = Vector2(384, 128)
+
+[node name="4,8" type="Node2D" parent="Positions"]
+position = Vector2(416, 128)
+
+[node name="4,9" type="Node2D" parent="Positions"]
+position = Vector2(448, 128)
+
+[node name="5,1" type="Node2D" parent="Positions"]
+position = Vector2(192, 160)
+
+[node name="5,2" type="Node2D" parent="Positions"]
+position = Vector2(224, 160)
+
+[node name="5,3" type="Node2D" parent="Positions"]
+position = Vector2(256, 160)
+
+[node name="5,4" type="Node2D" parent="Positions"]
+position = Vector2(288, 160)
+
+[node name="5,5" type="Node2D" parent="Positions"]
+position = Vector2(320, 160)
+
+[node name="5,6" type="Node2D" parent="Positions"]
+position = Vector2(352, 160)
+
+[node name="5,7" type="Node2D" parent="Positions"]
+position = Vector2(384, 160)
+
+[node name="5,8" type="Node2D" parent="Positions"]
+position = Vector2(416, 160)
+
+[node name="5,9" type="Node2D" parent="Positions"]
+position = Vector2(448, 160)
+
+[node name="6,1" type="Node2D" parent="Positions"]
+position = Vector2(192, 192)
+
+[node name="6,2" type="Node2D" parent="Positions"]
+position = Vector2(224, 192)
+
+[node name="6,3" type="Node2D" parent="Positions"]
+position = Vector2(256, 192)
+
+[node name="6,4" type="Node2D" parent="Positions"]
+position = Vector2(288, 192)
+
+[node name="6,5" type="Node2D" parent="Positions"]
+position = Vector2(320, 192)
+
+[node name="6,6" type="Node2D" parent="Positions"]
+position = Vector2(352, 192)
+
+[node name="6,7" type="Node2D" parent="Positions"]
+position = Vector2(384, 192)
+
+[node name="6,8" type="Node2D" parent="Positions"]
+position = Vector2(416, 192)
+
+[node name="6,9" type="Node2D" parent="Positions"]
+position = Vector2(448, 192)
+
+[node name="7,1" type="Node2D" parent="Positions"]
+position = Vector2(192, 224)
+
+[node name="7,2" type="Node2D" parent="Positions"]
+position = Vector2(224, 224)
+
+[node name="7,3" type="Node2D" parent="Positions"]
+position = Vector2(256, 224)
+
+[node name="7,4" type="Node2D" parent="Positions"]
+position = Vector2(288, 224)
+
+[node name="7,5" type="Node2D" parent="Positions"]
+position = Vector2(320, 224)
+
+[node name="7,6" type="Node2D" parent="Positions"]
+position = Vector2(352, 224)
+
+[node name="7,7" type="Node2D" parent="Positions"]
+position = Vector2(384, 224)
+
+[node name="7,8" type="Node2D" parent="Positions"]
+position = Vector2(416, 224)
+
+[node name="7,9" type="Node2D" parent="Positions"]
+position = Vector2(448, 224)
+
+[node name="8,1" type="Node2D" parent="Positions"]
+position = Vector2(192, 256)
+
+[node name="8,2" type="Node2D" parent="Positions"]
+position = Vector2(224, 256)
+
+[node name="8,3" type="Node2D" parent="Positions"]
+position = Vector2(256, 256)
+
+[node name="8,4" type="Node2D" parent="Positions"]
+position = Vector2(288, 256)
+
+[node name="8,5" type="Node2D" parent="Positions"]
+position = Vector2(320, 256)
+
+[node name="8,6" type="Node2D" parent="Positions"]
+position = Vector2(352, 256)
+
+[node name="8,7" type="Node2D" parent="Positions"]
+position = Vector2(384, 256)
+
+[node name="8,8" type="Node2D" parent="Positions"]
+position = Vector2(416, 256)
+
+[node name="8,9" type="Node2D" parent="Positions"]
+position = Vector2(448, 256)
+
+[node name="9,1" type="Node2D" parent="Positions"]
+position = Vector2(192, 288)
+
+[node name="9,2" type="Node2D" parent="Positions"]
+position = Vector2(224, 288)
+
+[node name="9,3" type="Node2D" parent="Positions"]
+position = Vector2(256, 288)
+
+[node name="9,4" type="Node2D" parent="Positions"]
+position = Vector2(288, 288)
+
+[node name="9,5" type="Node2D" parent="Positions"]
+position = Vector2(320, 288)
+
+[node name="9,6" type="Node2D" parent="Positions"]
+position = Vector2(352, 288)
+
+[node name="9,7" type="Node2D" parent="Positions"]
+position = Vector2(384, 288)
+
+[node name="9,8" type="Node2D" parent="Positions"]
+position = Vector2(416, 288)
+
+[node name="9,9" type="Node2D" parent="Positions"]
+position = Vector2(448, 288)
+
+[node name="Exit" parent="." instance=ExtResource("6_rtpto")]
+position = Vector2(464, 48)
+
+[node name="NavigationRegion2D" type="NavigationRegion2D" parent="."]
+visible = false
+navigation_polygon = SubResource("NavigationPolygon_8p7mk")
+
+[node name="Gui" type="Control" parent="."]
+z_index = 10
+layout_mode = 3
+anchors_preset = 0
+offset_right = 640.0
+offset_bottom = 384.0
+script = ExtResource("6_c5hg5")
+
+[node name="Hud" type="Control" parent="Gui"]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Food" type="Label" parent="Gui/Hud"]
+layout_mode = 0
+offset_left = 288.0
+offset_top = 320.0
+offset_right = 404.0
+offset_bottom = 352.0
+text = "Food: 100"
+label_settings = SubResource("LabelSettings_cvbf1")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="LevelChange" type="Control" parent="Gui"]
+visible = false
+anchors_preset = 0
+offset_right = 640.0
+offset_bottom = 384.0
+
+[node name="ColorRect" type="ColorRect" parent="Gui/LevelChange"]
+layout_mode = 0
+offset_right = 640.0
+offset_bottom = 384.0
+color = Color(0, 0, 0, 1)
+
+[node name="Days" type="Label" parent="Gui/LevelChange"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -111.0
+offset_top = -51.5
+offset_right = 111.0
+offset_bottom = 51.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Day: 1"
+label_settings = SubResource("LabelSettings_bt0at")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="LevelChangeTimer" type="Timer" parent="Gui/LevelChange"]
+autostart = true
+
+[node name="GameOver" type="Control" parent="Gui"]
+visible = false
+anchors_preset = 0
+offset_right = 640.0
+offset_bottom = 384.0
+
+[node name="ColorRect" type="ColorRect" parent="Gui/GameOver"]
+layout_mode = 0
+offset_right = 640.0
+offset_bottom = 384.0
+color = Color(0, 0, 0, 1)
+
+[node name="DaysSurvived" type="Label" parent="Gui/GameOver"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -111.0
+offset_top = -51.5
+offset_right = 111.0
+offset_bottom = 51.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Days Survived: 1"
+label_settings = SubResource("LabelSettings_bt0at")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="GameOver" type="Label" parent="Gui/GameOver"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -111.0
+offset_right = 111.0
+offset_bottom = 103.0
+grow_horizontal = 2
+text = "Game Over"
+label_settings = SubResource("LabelSettings_bt0at")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="timeout" from="Gui/LevelChange/LevelChangeTimer" to="Gui" method="_on_level_change_timer_timeout"]

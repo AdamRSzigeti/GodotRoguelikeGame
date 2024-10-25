@@ -1,0 +1,207 @@
+[gd_scene load_steps=5 format=3 uid="uid://7jp20igvk8yv"]
+
+[ext_resource type="Script" path="res://Scripts/gui.gd" id="1_otobv"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_cvbf1"]
+font_size = 20
+
+[sub_resource type="LabelSettings" id="LabelSettings_bt0at"]
+font_size = 25
+
+[sub_resource type="LabelSettings" id="LabelSettings_8f10b"]
+font_size = 75
+
+[node name="Gui" type="Control"]
+z_index = 10
+layout_mode = 3
+anchors_preset = 0
+offset_right = 640.0
+offset_bottom = 384.0
+script = ExtResource("1_otobv")
+
+[node name="Hud" type="Control" parent="."]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Food" type="Label" parent="Hud"]
+layout_mode = 0
+offset_left = 288.0
+offset_top = 320.0
+offset_right = 404.0
+offset_bottom = 352.0
+text = "Food: 100"
+label_settings = SubResource("LabelSettings_cvbf1")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="LevelChange" type="Control" parent="."]
+visible = false
+anchors_preset = 0
+offset_right = 640.0
+offset_bottom = 384.0
+
+[node name="ColorRect" type="ColorRect" parent="LevelChange"]
+layout_mode = 0
+offset_right = 640.0
+offset_bottom = 384.0
+color = Color(0, 0, 0, 1)
+
+[node name="Days" type="Label" parent="LevelChange"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -111.0
+offset_top = -51.5
+offset_right = 111.0
+offset_bottom = 51.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Day: 1"
+label_settings = SubResource("LabelSettings_bt0at")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="GameOver" type="Control" parent="."]
+visible = false
+anchors_preset = 0
+offset_right = 640.0
+offset_bottom = 384.0
+
+[node name="ColorRect" type="ColorRect" parent="GameOver"]
+layout_mode = 0
+offset_right = 640.0
+offset_bottom = 384.0
+color = Color(0, 0, 0, 1)
+
+[node name="DaysSurvived" type="Label" parent="GameOver"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -111.0
+offset_top = -51.5
+offset_right = 111.0
+offset_bottom = 51.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "You Survived 1 Days"
+label_settings = SubResource("LabelSettings_bt0at")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="GameOver" type="Label" parent="GameOver"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -111.0
+offset_right = 111.0
+offset_bottom = 103.0
+grow_horizontal = 2
+text = "Game Over"
+label_settings = SubResource("LabelSettings_bt0at")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Highscore" type="Control" parent="."]
+visible = false
+anchors_preset = 0
+offset_right = 640.0
+offset_bottom = 384.0
+
+[node name="ColorRect" type="ColorRect" parent="Highscore"]
+offset_right = 640.0
+offset_bottom = 384.0
+color = Color(0, 0, 0, 1)
+
+[node name="WallsBroken" type="Label" parent="Highscore"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -111.0
+offset_top = -96.0
+offset_right = 111.0
+offset_bottom = 7.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Walls Broken: 0"
+label_settings = SubResource("LabelSettings_bt0at")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="FoodEaten" type="Label" parent="Highscore"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -111.0
+offset_top = -32.0
+offset_right = 111.0
+offset_bottom = 71.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Food Eaten: 0"
+label_settings = SubResource("LabelSettings_bt0at")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="EnemiesKilled" type="Label" parent="Highscore"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -111.0
+offset_top = 32.0
+offset_right = 111.0
+offset_bottom = 135.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Enemies Killed: 0"
+label_settings = SubResource("LabelSettings_bt0at")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="DaysSurvivedLabel" type="Label" parent="Highscore"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -111.0
+offset_top = 96.0
+offset_right = 111.0
+offset_bottom = 199.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Days Survived: 0"
+label_settings = SubResource("LabelSettings_bt0at")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HighscoreLabel" type="Label" parent="Highscore"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -222.5
+offset_right = 222.5
+offset_bottom = 103.0
+grow_horizontal = 2
+text = "Highscore: 0"
+label_settings = SubResource("LabelSettings_8f10b")
+horizontal_alignment = 1
+vertical_alignment = 1
