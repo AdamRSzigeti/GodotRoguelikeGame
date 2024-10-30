@@ -1,8 +1,8 @@
-[gd_scene load_steps=7 format=3 uid="uid://comav02lqxrao"]
+[gd_scene load_steps=7 format=4 uid="uid://comav02lqxrao"]
 
 [ext_resource type="Script" path="res://Scripts/game_manager.gd" id="2_0mr37"]
 [ext_resource type="TileSet" uid="uid://csbdl4mqhbnl" path="res://Resources/tileset.tres" id="3_p8mgi"]
-[ext_resource type="PackedScene" uid="uid://dr2ollveil2kr" path="res://Prefabs/outerwall.tscn" id="4_68ykj"]
+[ext_resource type="TileSet" uid="uid://c7k43n7jgnofi" path="res://Resources/outerwalls.tres" id="5_l6gev"]
 [ext_resource type="Script" path="res://Scripts/positions.gd" id="5_s20vx"]
 [ext_resource type="PackedScene" uid="uid://ci7wkfvcxp7x" path="res://Prefabs/Exit.tscn" id="6_rtpto"]
 
@@ -18,116 +18,6 @@ script = ExtResource("2_0mr37")
 [node name="TileMapLayer" type="TileMapLayer" parent="."]
 position = Vector2(160, 32)
 tile_set = ExtResource("3_p8mgi")
-
-[node name="Outerwalls" type="Node2D" parent="."]
-
-[node name="Outerwall" parent="Outerwalls" instance=ExtResource("4_68ykj")]
-position = Vector2(144, 16)
-
-[node name="Outerwall9" parent="Outerwalls" instance=ExtResource("4_68ykj")]
-position = Vector2(144, 48)
-
-[node name="Outerwall10" parent="Outerwalls" instance=ExtResource("4_68ykj")]
-position = Vector2(144, 80)
-
-[node name="Outerwall11" parent="Outerwalls" instance=ExtResource("4_68ykj")]
-position = Vector2(144, 112)
-
-[node name="Outerwall12" parent="Outerwalls" instance=ExtResource("4_68ykj")]
-position = Vector2(144, 144)
-
-[node name="Outerwall13" parent="Outerwalls" instance=ExtResource("4_68ykj")]
-position = Vector2(144, 176)
-
-[node name="Outerwall23" parent="Outerwalls" instance=ExtResource("4_68ykj")]
-position = Vector2(432, 48)
-
-[node name="Outerwall24" parent="Outerwalls" instance=ExtResource("4_68ykj")]
-position = Vector2(432, 80)
-
-[node name="Outerwall25" parent="Outerwalls" instance=ExtResource("4_68ykj")]
-position = Vector2(432, 112)
-
-[node name="Outerwall26" parent="Outerwalls" instance=ExtResource("4_68ykj")]
-position = Vector2(432, 144)
-
-[node name="Outerwall27" parent="Outerwalls" instance=ExtResource("4_68ykj")]
-position = Vector2(432, 176)
-
-[node name="Outerwall35" parent="Outerwalls" instance=ExtResource("4_68ykj")]
-position = Vector2(400, 16)
-
-[node name="Outerwall36" parent="Outerwalls" instance=ExtResource("4_68ykj")]
-position = Vector2(144, 272)
-
-[node name="Outerwall28" parent="Outerwalls" instance=ExtResource("4_68ykj")]
-position = Vector2(432, 208)
-
-[node name="Outerwall14" parent="Outerwalls" instance=ExtResource("4_68ykj")]
-position = Vector2(144, 208)
-
-[node name="Outerwall15" parent="Outerwalls" instance=ExtResource("4_68ykj")]
-position = Vector2(144, 304)
-
-[node name="Outerwall2" parent="Outerwalls" instance=ExtResource("4_68ykj")]
-position = Vector2(176, 16)
-
-[node name="Outerwall3" parent="Outerwalls" instance=ExtResource("4_68ykj")]
-position = Vector2(208, 16)
-
-[node name="Outerwall4" parent="Outerwalls" instance=ExtResource("4_68ykj")]
-position = Vector2(240, 16)
-
-[node name="Outerwall5" parent="Outerwalls" instance=ExtResource("4_68ykj")]
-position = Vector2(272, 16)
-
-[node name="Outerwall6" parent="Outerwalls" instance=ExtResource("4_68ykj")]
-position = Vector2(304, 16)
-
-[node name="Outerwall7" parent="Outerwalls" instance=ExtResource("4_68ykj")]
-position = Vector2(336, 16)
-
-[node name="Outerwall29" parent="Outerwalls" instance=ExtResource("4_68ykj")]
-position = Vector2(368, 16)
-
-[node name="Outerwall30" parent="Outerwalls" instance=ExtResource("4_68ykj")]
-position = Vector2(144, 240)
-
-[node name="Outerwall31" parent="Outerwalls" instance=ExtResource("4_68ykj")]
-position = Vector2(368, 304)
-
-[node name="Outerwall32" parent="Outerwalls" instance=ExtResource("4_68ykj")]
-position = Vector2(400, 304)
-
-[node name="Outerwall8" parent="Outerwalls" instance=ExtResource("4_68ykj")]
-position = Vector2(432, 16)
-
-[node name="Outerwall16" parent="Outerwalls" instance=ExtResource("4_68ykj")]
-position = Vector2(176, 304)
-
-[node name="Outerwall17" parent="Outerwalls" instance=ExtResource("4_68ykj")]
-position = Vector2(208, 304)
-
-[node name="Outerwall18" parent="Outerwalls" instance=ExtResource("4_68ykj")]
-position = Vector2(240, 304)
-
-[node name="Outerwall19" parent="Outerwalls" instance=ExtResource("4_68ykj")]
-position = Vector2(272, 304)
-
-[node name="Outerwall20" parent="Outerwalls" instance=ExtResource("4_68ykj")]
-position = Vector2(304, 304)
-
-[node name="Outerwall21" parent="Outerwalls" instance=ExtResource("4_68ykj")]
-position = Vector2(336, 304)
-
-[node name="Outerwall22" parent="Outerwalls" instance=ExtResource("4_68ykj")]
-position = Vector2(432, 240)
-
-[node name="Outerwall33" parent="Outerwalls" instance=ExtResource("4_68ykj")]
-position = Vector2(432, 272)
-
-[node name="Outerwall37" parent="Outerwalls" instance=ExtResource("4_68ykj")]
-position = Vector2(432, 304)
 
 [node name="Positions" type="Node2D" parent="."]
 script = ExtResource("5_s20vx")
@@ -324,3 +214,7 @@ position = Vector2(400, 48)
 [node name="NavigationRegion2D" type="NavigationRegion2D" parent="."]
 visible = false
 navigation_polygon = SubResource("NavigationPolygon_8p7mk")
+
+[node name="Outerwalls" type="TileMapLayer" parent="."]
+tile_map_data = PackedByteArray("AAANAAAAAAACAAIAAAANAAEAAAACAAMAAAANAAIAAAACAAMAAAANAAMAAAACAAMAAAANAAQAAAACAAMAAAANAAUAAAACAAMAAAANAAYAAAACAAMAAAANAAcAAAACAAMAAAAEAAIAAAAAAAMAAAAEAAMAAAAAAAMAAAAEAAQAAAAAAAMAAAAEAAUAAAAAAAMAAAAEAAYAAAAAAAMAAAAEAAcAAAAAAAMAAAAEAAEAAAAAAAMAAAAFAAAAAAABAAIAAAAGAAAAAAABAAIAAAAHAAAAAAABAAIAAAAIAAAAAAABAAIAAAAJAAAAAAABAAIAAAAKAAAAAAABAAIAAAALAAAAAAABAAIAAAAMAAAAAAABAAIAAAAEAAAAAAAAAAIAAAAEAAgAAAAAAAMAAAANAAgAAAACAAMAAAANAAkAAAACAAQAAAAEAAkAAAAAAAQAAAAFAAkAAAABAAQAAAAGAAkAAAABAAQAAAAHAAkAAAABAAQAAAAIAAkAAAABAAQAAAAJAAkAAAABAAQAAAAKAAkAAAABAAQAAAALAAkAAAABAAQAAAAMAAkAAAABAAQAAAA=")
+tile_set = ExtResource("5_l6gev")
