@@ -11,7 +11,8 @@ vertices = PackedVector2Array(565.313, -22.7422, 534.742, 405.313, 106.68, 374.7
 polygons = Array[PackedInt32Array]([PackedInt32Array(0, 1, 2, 3)])
 outlines = Array[PackedVector2Array]([PackedVector2Array(128, -64, 576, -32, 544, 416, 96, 384)])
 
-[node name="n hgmjh m" type="Node2D"]
+[node name="Main" type="Node2D"]
+position = Vector2(-2, -1)
 script = ExtResource("2_0mr37")
 
 [node name="TileMapLayer" type="TileMapLayer" parent="."]
