@@ -1,20 +1,20 @@
 [gd_scene load_steps=6 format=3 uid="uid://ci7wkfvcxp7x"]
 
 [ext_resource type="Script" path="res://Scripts/exit.gd" id="1_gc2mr"]
-[ext_resource type="Texture2D" uid="uid://ngewymaincul" path="res://Sprites/Scavengers_SpriteSheet.png" id="2_pr7sw"]
+[ext_resource type="Texture2D" uid="uid://rbx2otjjqmm2" path="res://Sprites/Roguelike-Spritesheet.png" id="2_vdqe2"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_f5c2k"]
 size = Vector2(30, 30)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_suw3k"]
-atlas = ExtResource("2_pr7sw")
-region = Rect2(128, 64, 32, 32)
+[sub_resource type="AtlasTexture" id="AtlasTexture_0sekq"]
+atlas = ExtResource("2_vdqe2")
+region = Rect2(96, 32, 32, 32)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_00qsn"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_suw3k")
+"texture": SubResource("AtlasTexture_0sekq")
 }],
 "loop": true,
 "name": &"default",

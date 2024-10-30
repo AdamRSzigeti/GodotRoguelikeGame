@@ -7,9 +7,9 @@
 [ext_resource type="PackedScene" uid="uid://ci7wkfvcxp7x" path="res://Prefabs/Exit.tscn" id="6_rtpto"]
 
 [sub_resource type="NavigationPolygon" id="NavigationPolygon_8p7mk"]
-vertices = PackedVector2Array(565.313, -22.7422, 534.742, 405.313, 106.68, 374.742, 137.25, -53.3125)
+vertices = PackedVector2Array(440, 311, 140, 311, 140, 11, 440, 11)
 polygons = Array[PackedInt32Array]([PackedInt32Array(0, 1, 2, 3)])
-outlines = Array[PackedVector2Array]([PackedVector2Array(128, -64, 576, -32, 544, 416, 96, 384)])
+outlines = Array[PackedVector2Array]([PackedVector2Array(130, 1, 450, 1, 450, 321, 130, 321)])
 
 [node name="Main" type="Node2D"]
 position = Vector2(-2, -1)
@@ -212,7 +212,6 @@ position = Vector2(384, 256)
 position = Vector2(400, 48)
 
 [node name="NavigationRegion2D" type="NavigationRegion2D" parent="."]
-visible = false
 navigation_polygon = SubResource("NavigationPolygon_8p7mk")
 
 [node name="Outerwalls" type="TileMapLayer" parent="."]
